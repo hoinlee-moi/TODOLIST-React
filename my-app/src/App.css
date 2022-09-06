@@ -1,5 +1,47 @@
-.todo-item{
-  width: 300px;
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+main {
+  width: 40vw;
+  margin: auto;
+}
+main h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+.input-container input {
+  width: 50%;
+  padding: 3px 2px;
+  border-radius: 4px 0 0 4px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.input-container button {
+  width: 10%;
+  margin: 20px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: lightblue;
+  cursor: pointer;
+}
+.todo-item {
+  width: 100%;
   height: 50px;
-  border: 1px solid lightblue;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 30px;
+  font-weight: 400;
+  background-color: lightblue;
+
 }

@@ -14,9 +14,11 @@ function App() {
   };
   return (
     <main>
-      <input value={inputValue} type="text" onChange={(event) => setInputValue(event.target.value)}></input>
-      <button onClick={addItem}>Add</button>
-
+      <h1>Todo List</h1>
+      <div className="input-container">
+        <input value={inputValue} type="text" onChange={(event) => setInputValue(event.target.value)}></input>
+        <button onClick={addItem}>Add</button>
+      </div>
       <TodoBoard todoList={todoList} />
     </main>
   );
