@@ -10,7 +10,6 @@ function App() {
   const [inputValue, setInputValue] = useState("");
   const [todoList, setTodoList] = useState([]);
   const addItem = () => {
-    console.log("im herererer!", inputValue);
     setTodoList([...todoList, inputValue]);
   };
   return (
@@ -18,7 +17,7 @@ function App() {
       <input value={inputValue} type="text" onChange={(event) => setInputValue(event.target.value)}></input>
       <button onClick={addItem}>Add</button>
 
-      <TodoBoard />
+      <TodoBoard todoList={todoList} />
     </main>
   );
 }
